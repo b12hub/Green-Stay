@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Membership packages for eco-friendly vacation rentals - Green Stay">
+    <title>Membership Packages - Green Stay</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- Skip to main content link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Header Component -->
+<header class="header" role="banner">
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" aria-label="Green Stay Home">
+                    <span class="logo-text">Green Stay</span>
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="rentals.html" role="menuitem">Rentals</a></li>
+                    <li role="none"><a href="packages.html" role="menuitem" aria-current="page">Packages</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Accessibility Controls -->
+            <div class="accessibility-controls">
+                <button class="font-size-btn" data-action="decrease" aria-label="Decrease font size">A-</button>
+                <button class="font-size-btn" data-action="increase" aria-label="Increase font size">A+</button>
+                <button class="contrast-toggle" aria-label="Toggle high contrast mode">🔆</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main id="main-content" role="main">
+    <!-- Page Header -->
+    <section class="page-header" aria-labelledby="page-title">
+        <div class="container">
+            <h1 id="page-title" class="page-title">Membership Packages</h1>
+            <p class="page-subtitle">Choose the perfect plan for your sustainable travel needs</p>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages" aria-labelledby="packages-heading">
+        <div class="container">
+            <h2 id="packages-heading" class="section-title">Find Your Perfect Plan</h2>
+            <p class="packages-intro">
+                Join our community of eco-conscious travelers and enjoy exclusive benefits, discounts, and access to premium sustainable accommodations.
+            </p>
+
+            <div class="packages-grid">
+                <!-- Basic Package -->
+                <article class="package-card" data-package="basic">
+                    <div class="package-header">
+                        <div class="package-icon" aria-hidden="true"></div>
+                        <h3 class="package-title">Basic</h3>
+                        <p class="package-subtitle">Perfect for occasional eco-travelers</p>
+                    </div>
+
+                    <div class="package-price">
+                        <span class="price-amount">$0</span>
+                        <span class="price-period">/month</span>
+                    </div>
+
+                    <ul class="package-features" role="list">
+                        <li role="listitem">Access to basic eco-friendly rentals</li>
+                        <li role="listitem">5% discount on bookings</li>
+                        <li role="listitem">Monthly sustainability newsletter</li>
+                        <li role="listitem">Basic customer support</li>
+                        <li role="listitem">Carbon footprint tracking</li>
+                    </ul>
+
+                    <button class="package-button btn btn-outline">Get Started Free</button>
+
+                    <div class="package-footer">
+                        <p class="package-note">No credit card required</p>
+                    </div>
+                </article>
+
+                <!-- Intermediate Package -->
+                <article class="package-card package-popular" data-package="intermediate">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-header">
+                        <div class="package-icon" aria-hidden="true"></div>
+                        <h3 class="package-title">Intermediate</h3>
+                        <p class="package-subtitle">Great for regular eco-travelers</p>
+                    </div>
+
+                    <div class="package-price">
+                        <span class="price-amount">$19</span>
+                        <span class="price-period">/month</span>
+                    </div>
+
+                    <ul class="package-features" role="list">
+                        <li role="listitem">Access to all eco-friendly rentals</li>
+                        <li role="listitem">15% discount on bookings</li>
+                        <li role="listitem">Priority booking for popular properties</li>
+                        <li role="listitem">Weekly sustainability tips</li>
+                        <li role="listitem">24/7 customer support</li>
+                        <li role="listitem">Detailed carbon impact reports</li>
+                        <li role="listitem">Access to member-only properties</li>
+                    </ul>
+
+                    <button class="package-button btn btn-primary">Choose Intermediate</button>
+
+                    <div class="package-footer">
+                        <p class="package-note">Cancel anytime</p>
+                    </div>
+                </article>
+
+                <!-- Premium Package -->
+                <article class="package-card" data-package="premium">
+                    <div class="package-header">
+                        <div class="package-icon" aria-hidden="true"></div>
+                        <h3 class="package-title">Premium</h3>
+                        <p class="package-subtitle">Ultimate sustainable travel experience</p>
+                    </div>
+
+                    <div class="package-price">
+                        <span class="price-amount">$49</span>
+                        <span class="price-period">/month</span>
+                    </div>
+
+                    <ul class="package-features" role="list">
+                        <li role="listitem">Access to all premium eco-luxury rentals</li>
+                        <li role="listitem">25% discount on all bookings</li>
+                        <li role="listitem">Guaranteed availability for any property</li>
+                        <li role="listitem">Personal sustainability concierge</li>
+                        <li role="listitem">VIP customer support</li>
+                        <li role="listitem">Comprehensive impact analytics</li>
+                        <li role="listitem">Exclusive luxury eco-properties</li>
+                        <li role="listitem">Free carbon offset for all stays</li>
+                        <li role="listitem">Quarterly sustainability gifts</li>
+                    </ul>
+
+                    <button class="package-button btn btn-primary">Choose Premium</button>
+
+                    <div class="package-footer">
+                        <p class="package-note">Includes concierge service</p>
+                    </div>
+                </article>
+
+                <!-- Custom Package -->
+                <article class="package-card" data-package="custom">
+                    <div class="package-header">
+                        <div class="package-icon" aria-hidden="true"></div>
+                        <h3 class="package-title">Custom</h3>
+                        <p class="package-subtitle">Tailored for businesses & organizations</p>
+                    </div>
+
+                    <div class="package-price">
+                        <span class="price-amount">Custom</span>
+                        <span class="price-period">pricing</span>
+                    </div>
+
+                    <ul class="package-features" role="list">
+                        <li role="listitem">Bulk booking discounts</li>
+                        <li role="listitem">Corporate sustainability reporting</li>
+                        <li role="listitem">Dedicated account manager</li>
+                        <li role="listitem">Custom booking platform integration</li>
+                        <li role="listitem">Team sustainability training</li>
+                        <li role="listitem">White-label solutions available</li>
+                        <li role="listitem">API access for developers</li>
+                        <li role="listitem">Custom carbon offset programs</li>
+                        <li role="listitem">Priority feature requests</li>
+                    </ul>
+
+                    <button class="package-button btn btn-outline">Contact Sales</button>
+
+                    <div class="package-footer">
+                        <p class="package-note">Perfect for teams of 10+</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison" aria-labelledby="comparison-heading">
+        <div class="container">
+            <h2 id="comparison-heading" class="section-title">Compare All Plans</h2>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table" role="table" aria-label="Package comparison table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Features</th>
+                        <th scope="col">Basic</th>
+                        <th scope="col">Intermediate</th>
+                        <th scope="col">Premium</th>
+                        <th scope="col">Custom</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Monthly Price</th>
+                        <td>Free</td>
+                        <td>$19</td>
+                        <td>$49</td>
+                        <td>Custom</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Booking Discount</th>
+                        <td>5%</td>
+                        <td>15%</td>
+                        <td>25%</td>
+                        <td>Negotiable</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Property Access</th>
+                        <td>Basic</td>
+                        <td>All Standard</td>
+                        <td>All + Luxury</td>
+                        <td>All + Custom</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Customer Support</th>
+                        <td>Basic</td>
+                        <td>24/7</td>
+                        <td>VIP</td>
+                        <td>Dedicated Manager</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Carbon Offset</th>
+                        <td>Tracking Only</td>
+                        <td>Reports</td>
+                        <td>Free Offset</td>
+                        <td>Custom Programs</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Priority Booking</th>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Guaranteed</td>
+                        <td>Guaranteed</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" aria-labelledby="faq-heading">
+        <div class="container">
+            <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I change my plan anytime?</h3>
+                    <p class="faq-answer">
+                        Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate any billing differences.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What makes these rentals eco-friendly?</h3>
+                    <p class="faq-answer">
+                        All our properties meet strict sustainability criteria including renewable energy, water conservation, waste reduction, and local community support.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">How does carbon offsetting work?</h3>
+                    <p class="faq-answer">
+                        We calculate the carbon footprint of your stay and invest in verified offset projects like reforestation and renewable energy initiatives.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Is there a minimum commitment?</h3>
+                    <p class="faq-answer">
+                        No minimum commitment required. You can cancel your membership at any time with no penalties or fees.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="container">
+            <h2 id="cta-heading" class="cta-title">Ready to Start Your Sustainable Journey?</h2>
+            <p class="cta-description">
+                Join thousands of eco-conscious travelers making a positive impact on the planet.
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Started Today</a>
+                <a href="rentals.html" class="btn btn-secondary">Browse Properties</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Component -->
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Green Stay</h3>
+                <p class="footer-description">
+                    Leading the way in sustainable vacation rentals since 2020.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Facebook"></a>
+                    <a href="#" aria-label="Follow us on Twitter"></a>
+                    <a href="#" aria-label="Follow us on Instagram"></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Sustainability</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Carbon Neutral</a></li>
+                    <li><a href="#">Green Certifications</a></li>
+                    <li><a href="#">Impact Report</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Contact Info</h4>
+                <address class="footer-address">
+                    <p>hello@greenstay.com</p>
+                    <p>+998 (55) 555-55-55</p>
+                    <p>123 Eco Street, Green City, GC 12345</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Green Stay. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="../js/script.js"></script>
+</body>
+</html>

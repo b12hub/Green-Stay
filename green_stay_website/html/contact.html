@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Green Stay for eco-friendly vacation rental inquiries">
+    <title>Contact Us - Green Stay</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- Skip to main content link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Header Component -->
+<header class="header" role="banner">
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html" aria-label="Green Stay Home">
+                    <span class="logo-text">Green Stay</span>
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="rentals.html" role="menuitem">Rentals</a></li>
+                    <li role="none"><a href="packages.html" role="menuitem">Packages</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Accessibility Controls -->
+            <div class="accessibility-controls">
+                <button class="font-size-btn" data-action="decrease" aria-label="Decrease font size">A-</button>
+                <button class="font-size-btn" data-action="increase" aria-label="Increase font size">A+</button>
+                <button class="contrast-toggle" aria-label="Toggle high contrast mode">🔆</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main id="main-content" role="main">
+    <!-- Page Header -->
+    <section class="page-header" aria-labelledby="page-title">
+        <div class="container">
+            <h1 id="page-title" class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with our sustainability experts</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" aria-labelledby="form-heading">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 id="form-heading" class="section-title">Let's Start a Conversation</h2>
+                    <p class="contact-description">
+                        Whether you're planning your next eco-adventure, interested in our membership packages, or have questions about sustainable travel, we're here to help.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true"></div>
+                            <div class="contact-text">
+                                <h3>Email Us</h3>
+                                <p><a href="mailto:hello@greenstay.com">hello@greenstay.com</a></p>
+                                <p>We typically respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true"></div>
+                            <div class="contact-text">
+                                <h3>Call Us</h3>
+                                <p><a href="tel:+99855555555">+998 (555) 55-55-55</a></p>
+                                <p>Mon-Fri: 9AM-6PM PST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true"></div>
+                            <div class="contact-text">
+                                <h3>Visit Us</h3>
+                                <address>
+                                    123 Eco Street<br>
+                                    Green City, GC 12345<br>
+                                    United States
+                                </address>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true"></div>
+                            <div class="contact-text">
+                                <h3>Live Chat</h3>
+                                <p>Available for Premium members</p>
+                                <p>24/7 support for urgent inquiries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="full-name" class="form-label">
+                                Full Name <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input
+                                    type="text"
+                                    id="full-name"
+                                    name="fullName"
+                                    class="form-input"
+                                    required
+                                    aria-describedby="full-name-error"
+                                    autocomplete="name"
+                            >
+                            <div id="full-name-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                Email Address <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-input"
+                                    required
+                                    aria-describedby="email-error"
+                                    autocomplete="email"
+                            >
+                            <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    class="form-input"
+                                    aria-describedby="phone-error"
+                                    autocomplete="tel"
+                            >
+                            <div id="phone-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="package-inquiry" class="form-label">Package Interest</label>
+                            <select id="package-inquiry" name="packageInquiry" class="form-select">
+                                <option value="">Select a package (optional)</option>
+                                <option value="basic">Basic - Free Plan</option>
+                                <option value="intermediate">Intermediate - $19/month</option>
+                                <option value="premium">Premium - $49/month</option>
+                                <option value="custom">Custom - Enterprise Solution</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">
+                                Subject <span class="required" aria-label="required">*</span>
+                            </label>
+                            <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    class="form-input"
+                                    required
+                                    aria-describedby="subject-error"
+                                    placeholder="Brief description of your inquiry"
+                            >
+                            <div id="subject-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                Message <span class="required" aria-label="required">*</span>
+                            </label>
+                            <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-textarea"
+                                    rows="6"
+                                    required
+                                    aria-describedby="message-error"
+                                    placeholder="Tell us more about your inquiry, travel dates, or any specific requirements..."
+                            ></textarea>
+                            <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input
+                                        type="checkbox"
+                                        id="newsletter"
+                                        name="newsletter"
+                                        class="form-checkbox"
+                                >
+                                <span class="checkbox-text">
+                                        Subscribe to our sustainability newsletter for eco-travel tips and exclusive offers
+                                    </span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input
+                                        type="checkbox"
+                                        id="privacy-policy"
+                                        name="privacyPolicy"
+                                        class="form-checkbox"
+                                        required
+                                        aria-describedby="privacy-error"
+                                >
+                                <span class="checkbox-text">
+                                        I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Service</a> <span class="required" aria-label="required">*</span>
+                                    </span>
+                            </label>
+                            <div id="privacy-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                Send Message
+                            </button>
+                            <button type="reset" class="btn btn-outline">
+                                Clear Form
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Success Message (hidden by default) -->
+                    <div id="form-success" class="success-message" role="alert" aria-live="polite" style="display: none;">
+                        <h3>Thank you for your message!</h3>
+                        <p>We've received your inquiry and will get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq" aria-labelledby="contact-faq-heading">
+        <div class="container">
+            <h2 id="contact-faq-heading" class="section-title">Common Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How quickly do you respond to inquiries?</h3>
+                    <p class="faq-answer">
+                        We typically respond to all inquiries within 24 hours during business days. Premium members receive priority support with faster response times.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I book properties directly through this form?</h3>
+                    <p class="faq-answer">
+                        This form is for general inquiries. To book properties, please visit our <a href="rentals.html">Rentals page</a> or contact us for assistance with your booking.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer group booking discounts?</h3>
+                    <p class="faq-answer">
+                        Yes! We offer special rates for group bookings of 5+ people. Contact us with your group size and travel dates for a custom quote.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What if I need to cancel or modify my booking?</h3>
+                    <p class="faq-answer">
+                        Our cancellation policy varies by property and membership level. Contact us as soon as possible, and we'll work with you to find the best solution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

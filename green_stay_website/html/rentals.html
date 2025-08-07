@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse eco-friendly vacation rentals - Green Stay">
+  <title>Eco-Friendly Rentals - Green Stay</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- Skip to main content link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Header Component -->
+<header class="header" role="banner">
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html" aria-label="Green Stay Home">
+          <span class="logo-text">Green Stay</span>
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu" role="menubar">
+          <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+          <li role="none"><a href="rentals.html" role="menuitem" aria-current="page">Rentals</a></li>
+          <li role="none"><a href="packages.html" role="menuitem">Packages</a></li>
+          <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Accessibility Controls -->
+      <div class="accessibility-controls">
+        <button class="font-size-btn" data-action="decrease" aria-label="Decrease font size">A-</button>
+        <button class="font-size-btn" data-action="increase" aria-label="Increase font size">A+</button>
+        <button class="contrast-toggle" aria-label="Toggle high contrast mode">🔆</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main id="main-content" role="main">
+  <!-- Page Header -->
+  <section class="page-header" aria-labelledby="page-title">
+    <div class="container">
+      <h1 id="page-title" class="page-title">Eco-Friendly Rentals</h1>
+      <p class="page-subtitle">Discover sustainable accommodations that care for the environment</p>
+    </div>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="filters" aria-labelledby="filters-heading">
+    <div class="container">
+      <h2 id="filters-heading" class="section-title">Find Your Perfect Stay</h2>
+      <form class="filters-form" role="search" aria-label="Property filters">
+        <div class="filter-group">
+          <label for="location-filter" class="filter-label">Location</label>
+          <select id="location-filter" class="filter-select" name="location">
+            <option value="">All Locations</option>
+            <option value="mountains">Mountains</option>
+            <option value="coast">Coastal</option>
+            <option value="forest">Forest</option>
+            <option value="desert">Desert</option>
+            <option value="city">Urban</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="price-filter" class="filter-label">Price Range</label>
+          <select id="price-filter" class="filter-select" name="price">
+            <option value="">Any Price</option>
+            <option value="budget">$50 - $100/night</option>
+            <option value="mid">$100 - $200/night</option>
+            <option value="luxury">$200+/night</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="amenities-filter" class="filter-label">Eco Amenities</label>
+          <select id="amenities-filter" class="filter-select" name="amenities">
+            <option value="">All Amenities</option>
+            <option value="solar">Solar Power</option>
+            <option value="water-saving">Water Conservation</option>
+            <option value="composting">Composting</option>
+            <option value="organic">Organic Garden</option>
+            <option value="ev-charging">EV Charging</option>
+          </select>
+        </div>
+
+        <button type="submit" class="filter-button">Apply Filters</button>
+        <button type="reset" class="filter-reset">Clear All</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Properties Grid -->
+  <section class="properties" aria-labelledby="properties-heading">
+    <div class="container">
+      <h2 id="properties-heading" class="section-title">Available Properties</h2>
+      <div class="properties-grid" id="properties-grid">
+        <!-- Property Card 1 -->
+        <article class="property-card" data-location="mountains" data-price="mid" data-amenities="solar,water-saving">
+          <div class="property-image">
+            <img src="/images/photo_1.jpg"
+                 alt="Eco-friendly mountain cabin with solar panels"
+                 loading="lazy">
+            <button class="bookmark-btn" aria-label="Bookmark this property" data-property="mountain-cabin">
+
+            </button>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Mountain Solar Cabin</h3>
+            <p class="property-location">Rocky Mountains, Colorado</p>
+            <p class="property-description">
+              Cozy cabin powered entirely by solar energy with stunning mountain views and hiking trails.
+            </p>
+            <div class="property-amenities">
+              <span class="amenity-tag">Solar Power</span>
+              <span class="amenity-tag">Water Saving</span>
+              <span class="amenity-tag">Hiking</span>
+            </div>
+            <div class="property-footer">
+              <span class="property-price">$150/night</span>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property Card 2 -->
+        <article class="property-card" data-location="coast" data-price="luxury" data-amenities="solar,water-saving,composting">
+          <div class="property-image">
+            <img src="/images/photo_2.jpg"
+                 alt="Sustainable beach villa with ocean view"
+                 loading="lazy">
+            <button class="bookmark-btn" aria-label="Bookmark this property" data-property="beach-villa">
+
+            </button>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Sustainable Beach Villa</h3>
+            <p class="property-location"> Malibu, California</p>
+            <p class="property-description">
+              Luxury villa with ocean views, featuring rainwater collection and composting systems.
+            </p>
+            <div class="property-amenities">
+              <span class="amenity-tag">Solar Power</span>
+              <span class="amenity-tag">Rainwater Collection</span>
+              <span class="amenity-tag">Composting</span>
+            </div>
+            <div class="property-footer">
+              <span class="property-price">$350/night</span>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property Card 3 -->
+        <article class="property-card" data-location="forest" data-price="budget" data-amenities="organic,composting">
+          <div class="property-image">
+            <img src="/images/photo_3.webp"
+                 alt="Forest retreat with organic garden"
+                 loading="lazy">
+            <button class="bookmark-btn" aria-label="Bookmark this property" data-property="forest-retreat">
+
+            </button>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Forest Eco Retreat</h3>
+            <p class="property-location">Olympic National Forest, Washington</p>
+            <p class="property-description">
+              Peaceful retreat surrounded by old-growth forest with organic vegetable garden.
+            </p>
+            <div class="property-amenities">
+              <span class="amenity-tag">Organic Garden</span>
+              <span class="amenity-tag">Composting</span>
+              <span class="amenity-tag">Forest Access</span>
+            </div>
+            <div class="property-footer">
+              <span class="property-price">$85/night</span>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property Card 4 -->
+        <article class="property-card" data-location="desert" data-price="mid" data-amenities="solar,ev-charging">
+          <div class="property-image">
+            <img src="/images/photo_4.jpg"
+                 alt="Modern desert lodge with EV charging station"
+                 loading="lazy">
+            <button class="bookmark-btn" aria-label="Bookmark this property" data-property="desert-lodge">
+            </button>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Desert Solar Lodge</h3>
+            <p class="property-location">Sedona, Arizona</p>
+            <p class="property-description">
+              Modern lodge with panoramic desert views and EV charging station for eco-conscious travelers.
+            </p>
+            <div class="property-amenities">
+              <span class="amenity-tag">Solar Power</span>
+              <span class="amenity-tag">EV Charging</span>
+              <span class="amenity-tag">Desert Views</span>
+            </div>
+            <div class="property-footer">
+              <span class="property-price">$180/night</span>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property Card 5 -->
+        <article class="property-card" data-location="city" data-price="mid" data-amenities="solar,water-saving,ev-charging">
+          <div class="property-image">
+            <img src="/images/photo_5.avif"
+                 alt="Eco-friendly urban loft with green roof"
+                 loading="lazy">
+            <button class="bookmark-btn" aria-label="Bookmark this property" data-property="urban-loft">
+
+            </button>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Green Urban Loft</h3>
+            <p class="property-location">Portland, Oregon</p>
+            <p class="property-description">
+              Stylish loft in the heart of the city with green roof and sustainable amenities.
+            </p>
+            <div class="property-amenities">
+              <span class="amenity-tag">Solar Power</span>
+              <span class="amenity-tag">Water Saving</span>
+              <span class="amenity-tag">EV Charging</span>
+            </div>
+            <div class="property-footer">
+              <span class="property-price">$120/night</span>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Property Card 6 -->
+        <article class="property-card" data-location="coast" data-price="budget" data-amenities="water-saving,organic">
+          <div class="property-image">
+            <img src="/images/photo_6.jpg"
+                 alt="Charming coastal cottage with herb garden"
+                 loading="lazy">
+            <button class="bookmark-btn" aria-label="Bookmark this property" data-property="coastal-cottage">
+
+            </button>
+          </div>
+          <div class="property-content">
+            <h3 class="property-title">Coastal Herb Cottage</h3>
+            <p class="property-location">Cape Cod, Massachusetts</p>
+            <p class="property-description">
+              Charming cottage steps from the beach with herb garden and water conservation systems.
+            </p>
+            <div class="property-amenities">
+              <span class="amenity-tag">Water Saving</span>
+              <span class="amenity-tag">Herb Garden</span>
+              <span class="amenity-tag">Beach Access</span>
+            </div>
+            <div class="property-footer">
+              <span class="property-price">$95/night</span>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section" aria-labelledby="map-heading">
+    <div class="container">
+      <h2 id="map-heading" class="section-title">Property Locations</h2>
+      <div class="map-container">
+        <!-- Google Maps Embed -->
+        <div class="google-map" role="img" aria-label="Interactive map showing eco-friendly rental property locations across the United States">
+          <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBrooklyn%20Bridge!5e0!3m2!1sen!2sus!4v1642678901234!5m2!1sen!2sus&maptype=terrain&markers=color:green%7Clabel:E%7C39.7392,-104.9903%7C34.0522,-118.2437%7C47.6062,-122.3321%7C34.8697,-111.7610%7C45.5152,-122.6784%7C41.6688,-70.2962"
+                  width="100%"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Interactive map showing Green Stay eco-friendly rental locations">
+          </iframe>
+          <div class="map-overlay">
+            <div class="map-legend">
+              <h3>Eco-Friendly Locations</h3>
+              <ul>
+                <li><span class="legend-marker mountain"></span> Rocky Mountains, Colorado</li>
+                <li><span class="legend-marker coast">️</span> Malibu, California</li>
+                <li><span class="legend-marker forest"></span> Olympic National Forest, Washington</li>
+                <li><span class="legend-marker desert"></span> Sedona, Arizona</li>
+                <li><span class="legend-marker urban">️</span> Portland, Oregon</li>
+                <li><span class="legend-marker coast"></span> Cape Cod, Massachusetts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer Component -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-title">Green Stay</h3>
+        <p class="footer-description">
+          Leading the way in sustainable vacation rentals since 2020.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Follow us on Facebook"></a>
+          <a href="#" aria-label="Follow us on Twitter"></a>
+          <a href="#" aria-label="Follow us on Instagram"></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-subtitle">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-subtitle">Sustainability</h4>
+        <ul class="footer-links">
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Carbon Neutral</a></li>
+          <li><a href="#">Green Certifications</a></li>
+          <li><a href="#">Impact Report</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-subtitle">Contact Info</h4>
+        <address class="footer-address">
+          <p> hello@greenstay.com</p>
+          <p> +998 (55) 555-55-55</p>
+          <p> 123 Eco Street, Green City, GC 12345</p>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Green Stay. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="../js/script.js"></script>
+</body>
+</html>
